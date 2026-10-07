@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prepare for a consult — Harbor</title>
+  <meta name="description" content="A short checklist to get the most from a 45-minute HR consult.">
+  <style>
+    :root {
+      --paper: #F4F7F6;
+      --card: #FAFCFB;
+      --ink: #182320;
+      --ink-soft: #4A5C57;
+      --line: #D2DFDB;
+      --accent: #1F7A6B;
+      --accent-ink: #F2FAF8;
+      --serif: Georgia, serif;
+      --sans: system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body { background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.6 var(--sans); }
+    a { color: inherit; }
+    .wrap { max-width: 64rem; margin: 0 auto; padding: 0 1.25rem; }
+    header .wrap { padding-block: 1.5rem; }
+    .logo { font: 600 1.5rem var(--serif); text-decoration: none; }
+
+    h1 { font-family: var(--serif); font-weight: 600; line-height: 1.1; font-size: clamp(2.25rem, 5vw, 3.5rem); margin: 3rem 0 1.5rem; max-width: 16ch;
+      /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+      background: linear-gradient(90deg, #1F7A6B, #7A3FA0);
+      -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+    /* Intentional, for Impeccable's test drive: body text flush with the viewport edge, no background or gutter. */
+    .edge { margin: 0; padding: 0; max-width: none; }
+
+    .lede { color: var(--ink-soft); margin-bottom: 2rem; }
+
+    .list { list-style: none; padding: 0; display: grid; gap: 1rem; margin-bottom: 2rem; }
+    .list li { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 1.5rem; }
+    .list h2 { font: 600 1.25rem var(--serif); margin-bottom: 0.5rem; }
+
+    /* Intentional, for Impeccable's test drive: low-contrast text, light grey on a light background (about 1.6:1). */
+    .hint { color: #C9CFCD; }
+
+    /* Intentional, for Impeccable's test drive: hard-coded colour that the DESIGN.md palette lacks. */
+    .badge { display: inline-block; background: #E8590C; color: #FFFFFF; padding: 0.25rem 0.75rem; border-radius: 6px; font-weight: 600; margin-bottom: 1rem; }
+
+    /* Intentional, for Impeccable's test drive: layout property in a transition. */
+    .meter { height: 8px; width: 40%; background: var(--accent); border-radius: 6px; transition: width 0.3s; }
+    .meter:hover { width: 100%; }
+
+    /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+    .small-link { font-size: 10px; }
+
+    .btn { display: inline-block; background: var(--accent); color: var(--accent-ink); padding: 0.85rem 1.4rem; border-radius: 6px; font-weight: 600; text-decoration: none; }
+    footer { border-top: 1px solid var(--line); padding-block: 2rem; margin-top: 4rem; color: var(--ink-soft); font-size: 0.9375rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap"><a class="logo" href="../">Harbor</a></div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>Prepare for your consult</h1>
+    </div>
+
+    <p class="edge lede">Your 45-minute call goes furthest when the advisor knows the situation before you dial in, so gather these three things first and keep them to hand.</p>
+
+    <div class="wrap">
+      <span class="badge">Takes about 10 minutes</span>
+      <ul class="list">
+        <li><h2>Who is involved</h2><p>Roles, tenure and the team each person sits in.</p></li>
+        <li><h2>What has happened so far</h2><p>Dates, conversations and any written policy you relied on.</p></li>
+        <li><h2>What you need to decide</h2><p>The one decision the advisor can help you make this week.</p></li>
+      </ul>
+      <p class="hint">Nothing here is stored; the checklist is only for you.</p>
+      <div class="meter" aria-hidden="true"></div>
+      <p style="margin-top:2rem"><a class="btn" href="../#book">Book a 45-minute consult</a></p>
+      <p style="margin-top:1rem"><a class="small-link" href="../#how">See how it works</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Harbor. HR counsel for service businesses.</div>
+  </footer>
+</body>
+</html>
